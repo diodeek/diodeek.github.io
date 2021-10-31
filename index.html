@@ -31,7 +31,7 @@
 		$(function(){
 			//页面上茫无目的bb说的话
 			var h1 = $('h1');
-			var h1text = h1[0].text();
+			var h1text = $(h1[0]).text();
 			for (let i = 0 ; i < bbs.length ; i++){
 				if(h1text==bbs[i]){
 					if(i>=bbs.length){
