@@ -2,7 +2,7 @@
 	<head></head>
 	<body>
 		<div style='width: 100%;height:100%;' click='divclick()'>
-			<h1 style="text-align: center;">你是不是很好奇这个二维码是干啥的</h1>
+			<h1 style="text-align: center;"></h1>
 			
 		</div>
 	</body>
@@ -33,6 +33,10 @@
 			var h1 = $('h1');
 			var h1text = $(h1[0]).text();
 			for (let i = 0 ; i < bbs.length ; i++){
+				if(h1text==undefined||h1text==null||h1text==''){
+					$(h1[0]).text((bbs[0]);
+					break;
+				}
 				if(h1text==bbs[i]){
 					if(i>=bbs.length){
 						$(h1[0]).text(bbs[0]);
@@ -43,6 +47,7 @@
 					}
 					
 				}
+				console.log('xh')
 			}
 			
 		})
