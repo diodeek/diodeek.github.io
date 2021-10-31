@@ -29,7 +29,7 @@
 				h1text = $(h1[0]).text();
 				for (let i = 0 ; i < bbs.length ; i++){
 					if(h1text==bbs[i]){
-						if(i>=bbs.length){
+						if(i>=bbs.length-1){
 							 $(h1[0]).text(bbs[0]);
 							break;
 						}else{
